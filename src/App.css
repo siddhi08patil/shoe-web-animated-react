@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+#nav{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 6px rgba(42, 21, 94, 0.4);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#leftside{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#leftside h5 {
+  margin-left: 32px; 
+  transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#leftside h5:hover {
+    color: navy; 
+    text-decoration: underline; 
+}
+#middle img{
+  margin-left: 170px;
+  margin-top: -15px;
+}
+#lastone{
+  margin-left: 220px;
+  margin-top: 12px;
+}
+#mainpg{
+  display: flex;
+  flex-direction: row;
+}
+#text-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 70px;
+}
+#text-info h1{
+  color: rgb(25, 25, 61);
+}
+#text-info h3{
+  margin-top: 15px;
+  color: rgb(25, 25, 61);
+}
+#text-info p{
+  margin-top: 15px;
+  color: rgb(25, 25, 61);
+}
+#image-rt{
+  margin-top: -15px;
+  animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+      transform: translateY(-40px); /* Move up by 20px at the midpoint */
+  }
+}
+#text{
+  margin-top: 150px;
+  text-align: center;
+}
+#all {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+#all img {
+  margin-left: 20px;
+  margin-top: 50px;
+  transition: transform 0.5s ease; /* Smooth transformation */
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#all img:first-child {
+  margin-left: 0;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  30% {
+    transform: translateY(-45px);
   }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 0.6s ease-in-out;
+}
+
+#mainn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  background-color: rgb(69, 69, 126);
+  color: rgb(198, 199, 201);
+}
+#mainn div{
+  margin-left: 180px;
+}
+#carouselExampleControls{
+  margin-top:100px;
+  height: 500px;
+  width: 500px;
+}
+#boxer{
+  display: flex;
+  flex-direction: row;
 }
